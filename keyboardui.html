@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard UI Design</title>
+
+    <!--css file-->
+    <style>
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(237, 226, 226);
+}
+
+.wrapper .row {
+  width: 100%;
+  height: 60px;
+  margin: 10px 0 0 0;
+}
+
+.wrapper .row button {
+  width: 55px;
+  height: 55px;
+  background: rgb(214, 214, 214);
+  outline: none;
+  border: none;
+  box-shadow: 5px 5px 10px #474343, -5px -5px 10px #fff;
+  border-radius: 20%;
+  font-size: 18px;
+  color: #000;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.wrapper .row button:active {
+  box-shadow: 1px 1px 2px #fff8f8, -1px -1px 2px #474343;
+}
+
+.row button.backspace {
+  width: 115px;
+  border-radius: 10px;
+}
+
+.row button.tab {
+  width: 85px;
+  border-radius: 10px;
+}
+
+.row button.slash {
+  width: 85px;
+  border-radius: 10px;
+}
+
+.row button.caps {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.row button.enter {
+  width: 135px;
+  border-radius: 10px;
+}
+
+.row button.shift {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.wrapper .row:nth-child(5) button {
+  width: 70px;
+  border-radius: 10px;
+}
+
+.wrapper .row button.space {
+  width: 398px;
+  border-radius: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="row">
+        <button>~</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>0</button>
+        <button>-</button>
+        <button>=</button>
+        <button class="backspace">Backspace</button>
+      </div>
+      <div class="row">
+        <button class="tab">Tab</button>
+        <button>Q</button>
+        <button>W</button>
+        <button>E</button>
+        <button>R</button>
+        <button>T</button>
+        <button>Y</button>
+        <button>U</button>
+        <button>I</button>
+        <button>O</button>
+        <button>P</button>
+        <button>[</button>
+        <button>]</button>
+        <button class="slash">\</button>
+      </div>
+      <div class="row">
+        <button class="caps">Caps lock</button>
+        <button>A</button>
+        <button>S</button>
+        <button>D</button>
+        <button>F</button>
+        <button>G</button>
+        <button>H</button>
+        <button>J</button>
+        <button>K</button>
+        <button>L</button>
+        <button>;</button>
+        <button>'</button>
+        <button class="enter">Enter</button>
+      </div>
+      <div class="row">
+        <button class="shift">Shift</button>
+        <button>Z</button>
+        <button>X</button>
+        <button>C</button>
+        <button>V</button>
+        <button>B</button>
+        <button>N</button>
+        <button>M</button>
+        <button>,</button>
+        <button>.</button>
+        <button>/</button>
+        <button class="shift">Shift</button>
+      </div>
+      <div class="row">
+        <button>Ctrl</button>
+        <button>Fn</button>
+        <button>Win</button>
+        <button>Alt</button>
+        <button class="space">Space</button>
+        <button>Alt</button>
+        <button>Fn</button>
+        <button>Ctrl</button>
+      </div>
+    </div>
+  </body>
+</html>
